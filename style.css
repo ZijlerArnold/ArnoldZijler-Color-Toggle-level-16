@@ -1,0 +1,96 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: paleturquoise;
+}
+
+/* =============Classes================ */
+/*Show / Hide */
+.hide {
+    display: none;
+}
+.show {
+    display: inline;
+}
+/*End Show / Hide */
+
+/*Colors */
+.background-blue {
+    background: blue;
+}
+.background-blue {
+    background: red;
+}
+.background-blue {
+    background: yellow;
+}
+.background-blue {
+    background: black;
+}
+.background-blue {
+    background: green;
+}
+/*End Colors */
+/* ===============Classes Animations============== */
+.showbeams-animation {
+    animation-name: glijnaarbenee;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate; 
+}
+@keyframes glijnaarbenee {
+    0%{
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(1px);
+      opacity: 1;
+    }
+}
+/*===============================================================*/
+#wrapper {
+    width: 100%;
+    height: 100%;
+}
+header {
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    background-color: grey;  
+    border: 2px solid black;  
+}
+header figure {
+    margin-right: 0.5%;
+    height: 90%;
+    width: 13%;
+    cursor: pointer;
+}
+header figure img {
+    max-width: 100%;
+    max-height: 100%;
+}
+#color-box {   
+    display: flex;
+    height: 50vh;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0.5rem;
+    padding: 10px;
+}
+.color-beams {
+    list-style: none;
+    text-align: center;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background: grey;
+    cursor: pointer;    
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
